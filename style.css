@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 4rem;
+    color: #fdfdfd;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container-input {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 50px;
+}
+
+.container-input span {
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.slider {
+    appearance: none;
+    width: 300px;
+    background-color: #dfdfdf;
+    height: 18px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.button {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    color: #fdfdfd;
+    background-color: rgb(23, 24, 23);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.container-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.password {
+    height: 60px;
+    width: 300px;
+    padding: 10px;
+    color: #fdfdfd;
+    background-color:rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.copiar {
+    margin-top: 20px;
+    font-size: 15px;
+    height: 40px;
+    width: 250px;
+    padding: 10px;
+    color: #fdfdfd;
+    background-color:rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .copiar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    color: #dfdfdf;
+    text-align: center;
+    margin-top: 300px;
+    font-weight: bold;
+    font-size: 20px;
+}
